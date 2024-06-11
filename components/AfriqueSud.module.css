@@ -1,0 +1,64 @@
+
+.Afriquesud_container {
+    padding: 2rem;
+  }
+  
+  .presentation_section {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .presentation_section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .presentation_section p {
+    font-size: 1.25rem;
+    color: #6a6a6a;
+  }
+  
+  .plats_section {
+    text-align: center;
+  }
+  
+  .plats_section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .grid_item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .grid_item p {
+    margin: 0.5rem 0;
+  }
+  
+  .nom{
+    font-weight: bold;
+    color: #fe9e0d;
+  }
+  
+  @media (max-width: 1200px) {
+    .grid_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid_container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

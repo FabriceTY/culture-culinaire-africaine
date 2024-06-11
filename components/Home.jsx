@@ -10,6 +10,7 @@ import SenegalFlag from "../public/Assets/senegal.webp";
 import AfriqueSudFlag from "../public/Assets/afriquedusud.webp";
 import Cameroun from './Cameroun';
 import Senegal from './Senegal';
+import Afriquesud from "./AfriqueSud";
 import About from '@/components/About';
 import Testimonials from '@/components/Testimonials'
 import { FiArrowRight } from "react-icons/fi";
@@ -105,7 +106,7 @@ export default function Home({ setPage }) {
       </div>
       {activeSection === 'cameroun' && <Cameroun />}
       {activeSection === 'senegal' && <Senegal />}
-      {activeSection === 'afriqueSud' && <Testimonials />}
+      {activeSection === 'afriqueSud' && <Afriquesud />}
       {/* Contenu About et Testimonials */}
       <About />
       <Testimonials />
