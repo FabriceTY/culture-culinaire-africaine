@@ -23,8 +23,8 @@ export default function ConnexionForm() {
     const nom = watch('nom');
     
     return (
-        <form className={styles['connexion-form']} onSubmit={handleSubmit(onSubmit)}>
-            <label className={styles['connexion-form__label']}>
+        <form className={styles.connexion_form} onSubmit={handleSubmit(onSubmit)}>
+            <label className={styles.connexion_form__label}>
                 Nom:
                 <input
                     type="text"
@@ -33,12 +33,12 @@ export default function ConnexionForm() {
                         // minLength: { value: 4, message: "min 4 caractères" }
                     })}
                     placeholder='votre nom'
-                    className={styles['connexion-form__input']}
+                    className={styles.connexion_form__input}
                 />
-                <div className={styles['connexion-form__error']}>{errors.nom?.message}</div>
+                <div className={styles.connexion_form__error}>{errors.nom?.message}</div>
             </label>
             {/* <div className={styles['connexion-form__watch']}>Nom : {nom}</div> */}
-            <label className={styles['connexion-form__label']}>
+            <label className={styles.connexion_form__label}>
                 Courriel:
                 <input
                     type="email"
@@ -50,11 +50,11 @@ export default function ConnexionForm() {
                         }
                     })}
                     placeholder='votre courriel'
-                    className={styles['connexion-form__input']}
+                    className={styles.connexion_form__input}
                 />
-                <div className={styles['connexion-form__error']}>{errors.courriel?.message}</div>
+                <div className={styles.connexion_form__error}>{errors.courriel?.message}</div>
             </label>
-            <button type="submit" className={styles['connexion-form__button']}>Envoyer</button>
+            <button type="submit" className={styles.connexion_form__button}>Envoyer</button>
         </form>
     );
 }
