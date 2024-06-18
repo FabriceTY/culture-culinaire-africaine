@@ -9,6 +9,10 @@ const plats = [
   { id: 1, image: '/Assets/rizotto.webp', description: "Melange de riz et d'aissonnement local", nom: 'RIZOTTO' },
   { id: 2, image: '/Assets/poulet_frite.webp', description: "Poulet frite et marine a la main", nom: 'POULET FRITE' },
   { id: 3, image: '/Assets/poisson.webp', description: "Poisson de mer de la region de l'Ouest", nom: "POISSON D'EAU DOUCE" },
+  { id: 4, image: '/Assets/plat_entre.webp', description: "Plat d'entree pour preparer son palais", nom: "SALADE DE FRUIT" },
+  { id: 5, image: '/Assets/crevettes.webp', description: "Mixture de riz Jaune et crevettes de Mer", nom: "CREVETTES" },
+  { id: 6, image: '/Assets/sudhi.webp', description: "Imitation d'origine Japonaise", nom: "CAMER-SUSHI" },
+  
 ];
 
 const Cameroun = () => {
