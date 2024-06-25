@@ -39,21 +39,23 @@ export default function FormNonControlle() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className={styles.form}>
-            <div className={styles.field}>
-                <label>Nom:
-                    <input type="text" ref={nomRef} className={styles.input} />
-                    {erreurNom && <div className={styles.erreur}>{erreurNom}</div>}
-                </label>
-            </div>
-            <div className={styles.field}>
-                <label>Email:
-                    <input type="email" ref={courrielRef} className={styles.input} />
-                    {erreurCourriel && <div className={styles.erreur}>{erreurCourriel}</div>}
-                </label>
-            </div>
-            <button type="submit" className={styles.button}>Envoyer</button>
-            {envoiReussi && <div className={styles.result}>Informations envoyées avec succès. Nom = {nomRef.current.value} et Courriel = {courrielRef.current.value}</div>}
-        </form>
+        <div className={styles.contact_container}>
+            <form onSubmit={handleSubmit} className={styles.form}>
+                <div className={styles.field}>
+                    <label>Nom:
+                        <input type="text" ref={nomRef} className={styles.input} />
+                        {erreurNom && <div className={styles.erreur}>{erreurNom}</div>}
+                    </label>
+                </div>
+                <div className={styles.field}>
+                    <label>Email:
+                        <input type="email" ref={courrielRef} className={styles.input} />
+                        {erreurCourriel && <div className={styles.erreur}>{erreurCourriel}</div>}
+                    </label>
+                </div>
+                <button type="submit" className={styles.button}>Envoyer</button>
+                {envoiReussi && <div className={styles.result}>Informations envoyées avec succès. Nom = {nomRef.current.value} et Courriel = {courrielRef.current.value}</div>}
+            </form>
+        </div>
     );
 }

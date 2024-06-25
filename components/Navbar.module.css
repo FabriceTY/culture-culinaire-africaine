@@ -57,63 +57,129 @@
     display: block;
   }
 } */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  position: sticky;
+/* Navbar.module.css */
+/* Navbar.module.css */
+/* Navbar.module.css */
+/* Navbar.module.css */
+/* Navbar.module.css */
+.nav {
+  background-color: rgba(51, 51, 51, 0.8); /* Fond semi-transparent */
+  padding: 0 20px;
+  position: fixed; /* Fixé en haut de la page */
+  width: 100%;
   top: 0;
+  left: 0;
   z-index: 1000;
 }
 
-.nav_logo_container {
-  cursor: pointer;
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.navbar_links_container {
+.nav_logo_container img {
+  height: 30px; /* Ajuster la hauteur selon les besoins */
+  width: auto;
+}
+
+.nav_menu {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
-.navbar_links_container a {
+.nav_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav_menu li {
+  display: inline;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 
-.navbar_cart_icon {
+.nav a:hover {
+  background-color: #575757;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.nav_icon {
+  display: none;
+  color: white;
   font-size: 24px;
   cursor: pointer;
 }
 
-.primary_button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.primary_button:hover {
-  background-color: #0056b3;
-}
-
-.navbar_menu_container {
-  display: none;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .navbar_links_container {
-      display: none;
+@media screen and (max-width: 768px) {
+  .nav_menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    position: absolute;
+    top: 60px; /* Ajuster en fonction de la hauteur de la navbar */
+    left: 0;
+    z-index: 999;
   }
-  .navbar_menu_container {
-      display: block;
+
+  .nav_menu_open {
+    display: flex;
+  }
+
+  .nav_menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav_menu li {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+
+  .nav a {
+    padding: 14px 16px;
+    width: 100%;
+  }
+
+  .nav_icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav a {
+    padding: 12px;
+  }
+}
+
+/* Ajouter du padding au contenu principal pour éviter le chevauchement */
+.content {
+  padding-top: 80px; /* Ajuster en fonction de la hauteur de la navbar */
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding-top: 100px; /* Ajuster en fonction de la hauteur de la navbar sur petits écrans */
   }
 }

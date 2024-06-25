@@ -1,0 +1,24 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    background-color: rgba(51, 51, 51, 0.8); /* Fond semi-transparent */
+}
+.light{
+    background-color: #e6ece479;
+}
+.dark{
+    background-color: #000;
+}
+
+ /*.header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 60px; Ajustez la hauteur selon vos besoins
+}
+ */
