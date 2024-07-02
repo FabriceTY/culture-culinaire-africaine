@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './connexion.module.css';
+import styles from './Connexion.module.css';
 import { useForm } from 'react-hook-form';
 
 export default function ConnexionForm() {
