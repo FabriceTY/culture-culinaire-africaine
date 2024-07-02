@@ -63,13 +63,14 @@
 /* Navbar.module.css */
 /* Navbar.module.css */
 .nav {
-  background-color: rgba(51, 51, 51, 0.8); /* Fond semi-transparent */
+  background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
   padding: 0 20px;
-  position: fixed; /* Fixé en haut de la page */
+  position: fixed; /* Fixed at the top of the page */
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 .nav_container {
@@ -78,10 +79,11 @@
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 10px 0; /* Add some padding for better spacing */
 }
 
 .nav_logo_container img {
-  height: 30px; /* Ajuster la hauteur selon les besoins */
+  height: 40px; /* Adjust height as needed */
   width: auto;
 }
 
@@ -106,21 +108,27 @@
 }
 
 .nav a {
-  display: block;
+  display: flex;
+  align-items: center;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  display: flex;
-  align-items: center;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .nav a:hover {
   background-color: #575757;
+  border-radius: 4px; /* Rounded corners on hover */
+}
+
+.nav a svg {
+  margin-right: 8px; /* Add some space after the icons */
 }
 
 .active {
   background-color: #04AA6D;
+  border-radius: 4px; /* Rounded corners for active state */
 }
 
 .nav_icon {
@@ -137,7 +145,7 @@
     width: 100%;
     background-color: rgba(51, 51, 51, 0.8);
     position: absolute;
-    top: 60px; /* Ajuster en fonction de la hauteur de la navbar */
+    top: 60px; /* Adjust based on navbar height */
     left: 0;
     z-index: 999;
   }
@@ -173,13 +181,13 @@
   }
 }
 
-/* Ajouter du padding au contenu principal pour éviter le chevauchement */
+/* Add padding to main content to avoid overlap */
 .content {
-  padding-top: 80px; /* Ajuster en fonction de la hauteur de la navbar */
+  padding-top: 80px; /* Adjust based on navbar height */
 }
 
 @media screen and (max-width: 768px) {
   .content {
-    padding-top: 100px; /* Ajuster en fonction de la hauteur de la navbar sur petits écrans */
+    padding-top: 100px; /* Adjust based on navbar height on smaller screens */
   }
 }
