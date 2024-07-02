@@ -1,8 +1,9 @@
 {
     "app.header.title": "",
-    "app.header.menu.lien1": "",
-    "app.header.menu.lien2": "",
-    "app.header.menu.lien3": "",
-    "app.header.menu.lien4": "",
-    "app.header.theme": ""
+    "app.header.menu.lien1": "Home",
+    "app.header.menu.lien2": "About",
+    "app.header.menu.lien3": "Testimonials",
+    "app.header.menu.lien4": "Contact",
+    "app.header.menu.lien5": "Connexion",
+    "app.header.theme": "Theme:Black/Light"
 }
