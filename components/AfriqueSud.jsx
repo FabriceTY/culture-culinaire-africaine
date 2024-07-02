@@ -18,9 +18,9 @@ const Afriquesud = () => {
   return (
     <div className={styles.Afriquesud_container}>
       <section className={styles.presentation_section}>
-        <h1>Présentation d'Afrique du Sud</h1>
+        <h1>Présentation d`&apos;`Afrique du Sud</h1>
         <p>
-          L'Afrique du Sud est un pays riche en culture et en saveurs culinaires. 
+          L`&apos;`Afrique du Sud est un pays riche en culture et en saveurs culinaires. 
           Découvrez les plats typiques qui font la renommée de ce beau pays africain.
         </p>
       </section>
