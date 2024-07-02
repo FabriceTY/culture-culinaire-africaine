@@ -2,11 +2,11 @@
 import Contact2 from "@/components/Contact2"
 
 export const metadata = {
-    title: 'Contact | my-youtube-app',
-    description: 'Page de Contact',
+    title: 'Contact | culture-culinaire-africaine',
+    description: 'Cette section permet de contacter un administrateur',
     openGraph: {
-        title: 'Contact | my-youtube-app',
-        description: 'Page de Contact',
+        title: 'Contact | culture-culinaire-africaine',
+        description: 'Cette section permet de contacter un administrateur',
         images: ['./Logo.webp']
     }
 }

@@ -1,11 +1,11 @@
 
 import Testimonials from "@/components/Testimonials";
 export const metadata = {
-    title: 'Testimonials | my-youtube-app',
-    description: 'Page de Temoignages',
+    title: 'Testimonials | culture-culinaire-africaine',
+    description: 'Page de receuil des Temoignages des utilisateurs',
     openGraph: {
-        title: 'Testimonials | my-youtube-app',
-        description: 'Page de Temoignages',
+        title: 'Testimonials | culture-culinaire-africaine',
+        description: 'Page de receuil des Temoignages des utilisateurs',
         images: ['./Logo.webp']
     }
 }

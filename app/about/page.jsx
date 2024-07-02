@@ -2,11 +2,11 @@
 import About from "@/components/About";
 
 export const metadata = {
-    title: 'About | my-youtube-app',
-    description: 'Page de a Propos',
+    title: 'About | culture-culinaire-africaine',
+    description: 'Ici se trouve la description de ce site',
     openGraph: {
-        title: 'About | my-youtube-app',
-        description: 'Page a Propos',
+        title: 'About | culture-culinaire-africaine',
+        description: 'Ici se trouve la description de ce site',
         images: ['./Logo.webp']
     }
 }

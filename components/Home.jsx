@@ -1,5 +1,4 @@
 
-
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from '@/components/Home.module.css';
@@ -14,13 +13,13 @@ import About from '@/components/About';
 import Testimonials from '@/components/Testimonials'
 import { FiArrowRight } from "react-icons/fi";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 export default function Home({ setPage }) {
   const [activeSection, setActiveSection] = useState(null);
 
   return (
-    <div className="content">  {/* Ajouter la classe content ici */}
+    <div>
       <div className={styles.home_container}>
         <div className={styles.home_banner_container}>
           <div className={styles.home_bannerImage_container}>
@@ -33,7 +32,7 @@ export default function Home({ setPage }) {
               servis et livrés à chaud.
             </h1>
             <p className={styles.primary_text}>
-              N'hésitez plus, peu importe vos origines, venez à la rencontre des saveurs 
+              N&apos;hésitez plus, peu importe vos origines, venez à la rencontre des saveurs 
               des coins du continent africain.
             </p>
 
@@ -106,10 +105,10 @@ export default function Home({ setPage }) {
         </div>
         {activeSection === 'cameroun' && <Cameroun />}
         {activeSection === 'senegal' && <Senegal />}
-        {activeSection === 'afriqueSud' && <Testimonials />}
+        {activeSection === 'afriqueSud' && <Testimonials/>}
         {/* Contenu About et Testimonials */}
-        <About />
-        <Testimonials />
+        <About/>
+        <Testimonials/>
       </div>
     </div>
   );

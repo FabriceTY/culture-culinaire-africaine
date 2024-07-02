@@ -1,11 +1,11 @@
 
 import ConnexionForm from "@/components/Connexion";
 export const metadata = {
-    title: 'Connexion | my-youtube-app',
-    description: 'Page de Connexion',
+    title: 'Connexion | culture-culinaire-africaine',
+    description: 'Page permettant de se connecter au site',
     openGraph: {
-        title: 'Connexion | my-youtube-app',
-        description: 'Page de Connexion',
+        title: 'Connexion | culture-culinaire-africaine',
+        description: 'Page permettant de se connecter',
         images: ['./Logo.webp']
     }
 }
