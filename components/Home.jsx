@@ -13,6 +13,7 @@ import About from '@/components/About';
 import Testimonials from '@/components/Testimonials'
 import { FiArrowRight } from "react-icons/fi";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Afriquesud from "./AfriqueSud";
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 export default function Home({ setPage }) {
@@ -104,8 +105,8 @@ export default function Home({ setPage }) {
           </div>
         </div>
         {activeSection === 'cameroun' && <Cameroun />}
-        {activeSection === 'senegal' && <Senegal />}
-        {activeSection === 'afriqueSud' && <Testimonials/>}
+        {activeSection === 'senegal' && <About />}
+        {activeSection === 'afriqueSud' && <Afriquesud/>}
         {/* Contenu About et Testimonials */}
         <About/>
         <Testimonials/>
